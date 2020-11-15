@@ -1,0 +1,83 @@
+round 1:
+	if card is black: bid 1
+	if card is not black:
+		if player goes first:
+			chance to bid 1 = (card# - 1) / 56
+			chance to bid 0 = (57 - card#) / 56
+		if computer goes first:
+			if card = 1: bid 0
+			if card = 2:
+				50% chance bid 1
+				50% chance bid 0
+			if card > 2: bid 1
+round 2:
+	if two black cards: bid 2
+	if one black and one not black:
+		if player goes first:
+			chance to bid 2 = (nonblack card# - 1) / 56
+			chance to bid 1 = (44 - nonblack card# + black card#) / 56
+			chance to bid 0 = (13 - blackcard#) / 56
+		if computer goes first:
+			if non-black = 1: bid 1
+			if non-black = 2:
+				50% chance bid 2
+				50% chance bid 1
+			if non-black > 2: bid 2
+	if two non-black cards:
+		if player goes first:
+			12.5% chance bid 2
+			37.5% chance bid 1
+			50% chance bid 0
+		if computer goes first:
+			if lower card = 1:
+				50% chance bid 1
+				50% chance bid 0
+			if lower card > 1:
+				25% chance bid 2
+				50% chance bid 1
+				25% chance bid 0
+round 3:
+	if three black cards: bid 3
+	if two black and one not black:
+		if player goes first:
+			chance to bid 3 = (nonblack card# - 1) / 56
+			chance to bid 2 = (32 - nonblack card# + higher blackcard# + lower blackcard#) / 56
+			chance to bid 1 = (12 - lower blackcard#) / 56
+			chance to bid 0 = (13 - higher blackcard#) / 56
+		if computer goes first:
+			if non-black = 1: bid 2
+			if non-black = 2:
+				50% chance bid 3
+				50% chance bid 2
+			if non-black > 2: bid 3
+	if one black and two not black:
+		if player goes first:
+			if lower non-black = 1: bid 1
+			if lower non-black = 2:
+				50% chance bid 2
+				50% chance bid 1
+			if lower non-black > 2: bid 2
+		if computer goes first:
+			if lower non-black = 1:
+				50% chance bid 2
+				50% chance bid 1
+			if lower non-black > 1 and <= 12:
+				50% chance bid 3
+				50% chance bid 2
+			if lower non-black > 12: bid 3
+	if three non-black cards:
+		if player goes first:
+			3.125% chance bid 3
+			9.375% chance bid 2
+			37.5% chance bid 1
+			50% chance bid 0
+		if computer goes first:
+			if lowest card = 1:
+				25% chance bid 2
+				50% chance bid 1
+				25% chance bid 0
+			if lowest card > 1:
+				12.5% chance bid 3
+				37.5% chance bid 2
+				37.5% chance bid 1
+				12.5% chance bid 0

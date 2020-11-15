@@ -44,3 +44,5 @@ round 3:
 				computer should choose higher rank of the 2 choices
 	-> trick #3
 		there is no logic, only chance
+
+card's rank is equal to its number (unless it is black, then add 14)
