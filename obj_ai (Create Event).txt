@@ -1,0 +1,332 @@
+/// @description Insert description here
+// You can write your code in this editor
+/*
+if (room == rm_round1) {
+	firstCard = drawCard();
+	secondCard = 0;
+	thirdCard = 0;
+}
+
+if (room == rm_round2) {
+	firstCard = drawCard();
+	secondCard = drawCard();
+	thirdCard = 0;
+}
+
+if (room == rm_round3) {
+	firstCard = drawCard();
+	secondCard = drawCard();
+	thirdCard = drawCard();
+}
+
+if (room == rm_round1) {
+
+}
+
+if (room == rm_round2) {
+
+}
+
+if (room == rm_round3) {
+
+}
+
+chooseCardToPlay(numCards, firstCard, secondCard, thirdCard) {
+	if (numCards == 1) {
+		playCard(firstCard);
+	}
+	if (numCards == 2) {
+		if (tricksCompleted == 0) {
+			switch (computerBid) {
+				case 0:
+					playCard(min(firstCard, secondCard);
+					break;
+				case 1:
+				case 2:
+					playCard(max(firstCard, secondCard);
+					break;
+			}
+		} else if (tricksCompleted == 1) {
+			if (secondCard != 0) {
+				firstCard = secondCard;
+			}
+			playCard(firstCard);
+		}
+	}
+	if (numCards == 3) {
+		if (tricksCompleted == 0) {
+			switch (computerBid) {
+				case 0:
+					playCard(min(firstCard, secondCard, thirdCard));
+					break;
+				case 1:
+				case 2:
+				case 3:
+					playCard(max(firstCard, secondCard, thirdCard));
+					break;
+			}
+			if (firstCard == 0) {
+				firstCard = secondCard;
+			}
+			if (secondCard == 0) {
+				secondCard = thirdCard;
+			}
+		} else if (tricksCompleted == 1) {
+			switch (computerBid) {
+				case 0:
+					playCard(min(firstCard, secondCard);
+				case 1:
+					if (computerLostLastRound == true) {
+						playCard(max(firstCard, secondCard));
+					} else {
+						playCard(min(firstCard, secondCard));
+					}
+				case 2:
+				case 3:
+					playCard(max(firstCard, secondCard);
+			}
+			if (firstCard == 0) {
+				firstCard = secondCard;
+			}
+		} else if (tricksCompleted == 2) {
+			playCard(firstCard);
+		}
+	}
+}
+*/
+
+///////////////////////////////////////////////////////////////////////
+
+
+/*
+		
+if (room == rm_round1) {
+	if (isBlack(firstCard) == false) {
+		computerBid = 1;
+	} else {
+		if (playerGoesFirst == true) {
+			var bid_1 = irandom_range(1, 56);
+			if (bid_1 < valueOfCard(firstCard)) {
+				computerBid = 1;
+			} else {
+				computerBid = 0;
+			}
+		} else {
+			if (valueOfCard(firstCard) == 1) {
+				computerBid = 0;
+			} else if (valueOfCard(firstCard) == 2) {
+				computerBid = choose(0,1);
+			} else if (valueOfCard(firstCard) > 2) {
+				computerBid = 1;
+			}
+		}
+	}
+}
+
+if (room == rm_round2) {
+	if (isBlack(firstCard) == true and isBlack(secondCard) == true) {
+		computerBid = 2;
+	} else if ((isBlack(firstCard) == true and isBlack(secondCard) == false) or (isBlack(firstCard == false and isBlack(secondCard) == true))) {
+		if (playerGoesFirst == true) {
+			var bid_2 = irandom_range(1, 56);
+			if (isBlack(firstCard) == true) {
+				if (bid_2 < 14 - valueOfCard(firstCard)) {
+					computerBid = 0;
+				} else if (bid_2 >= 14 - valueOfCard(firstCard) <= 57 - valueOfCard(secondCard)) {
+					computerBid = 1;
+				} else if (bid > 57 - valueofCard(secondCard)) {
+					computerBid = 2;
+				}
+			} else {
+				if (bid_2 < 14 - valueOfCard(secondCard)) {
+					computerBid = 0;
+				} else if (bid_2 >= 14 - valueOfCard(secondCard) <= 57 - valueOfCard(firstCard)) {
+					computerBid = 1;
+				} else if (bid > 57 - valueofCard(firstCard)) {
+					computerBid = 2;
+				}
+			}
+		} else {
+			if (valueOfCard(firstCard) == 1) {
+				computerBid = 1;
+			} else if (valueOfCard(firstCard) == 2) {
+				computerBid = choose(1, 2);
+			} else (valueOfCard(firstCard) > 2) {
+				computerBid = 2;
+			}
+		}
+	} else if (isBlack(firstCard) == false and isBlack(secondCard) == false) {
+		if (playerGoesFirst == true) {
+			var bid_3 = irandom_range(0, 7);
+			if (bid_3 < 1) {
+				computerBid = 2;
+			} else if (bid_3 >= 1 and bid_3 < 4) {
+				computerBid = 1;
+			} else {
+				computerBid = 0;
+			}
+		} else {
+			if (min(firstCard, secondCard) == 1) {
+				computerBid = choose(0, 1);
+			} else {
+				var bid_3a = irandom_range(0, 3);
+				if (bid_3a == 0) {
+					computerBid = 0;
+				} else if (bid_3a == 1 or bid_3a == 2) {
+					computerBid = 1;
+				} else {
+					computerBid = 2;
+				}
+			}
+		}
+	}
+}
+
+*/
+
+
+/////////////////////////////////////////////////
+/*
+if (room == rm_round3) {
+	if (isBlack(firstCard) == true and isBlack(secondCard) == true and isBlack(thirdCard) == true) {
+		computerBid = 3;
+	} else if (
+	(isBlack(firstCard) == true and isBlack(secondCard) == true and isBlack(thirdCard) == false) or
+	(isBlack(firstCard) == true and isBlack(secondCard) == false and isBlack(thirdCard) == true) or
+	(isBlack(firstCard) == false and isBlack(secondCard) == true and isBlack(thirdCard) == true)
+	)	{
+		if (playerGoesFirst == true) {
+			computerBid = 2;
+		} else {
+			if (isBlack(firstCard) == true) {
+				if (valueOfCard(firstCard) == 1) {
+					computerBid = 2;
+				} else if (valueOfCard(firstCard) == 2) {
+					computerBid = choose(2, 3);
+				} else (valueOfCard(firstCard) > 2) {
+					computerBid = 3;
+				}
+			} else if (isBlack(secondCard) == true) {
+				if (valueOfCard(secondCard) == 1) {
+					computerBid = 2;
+				} else if (valueOdCard(secondCard) == 2) {
+					computerBid = choose(2, 3);
+				} else (valueOfCard(secondCard) > 2) {
+					computerBid = 3;
+				}
+			} else if (isBlack(thirdCard) == true) {
+				if (valueOfCard(thirdCard) == 1) {
+					computerBid = 2;
+				} else if (valueOdCard(thirdCard) == 2) {
+					computerBid = choose(2, 3);
+				} else (valueOfCard(thirdCard) > 2) {
+					computerBid = 3;
+				}
+			}
+		}
+	} else if (
+	(isBlack(firstCard) == false and isBlack(secondCard) == false and isBlack(thirdCard) == true) or
+	(isBlack(firstCard) == false and isBlack(secondCard) == true and isBlack(thirdCard) == false) or
+	(isBlack(firstCard) == true and isBlack(secondCard) == false and isBlack(thirdCard) == false)
+	)	{
+		if (playerGoesFirst == true) {
+			if (isBlack(thirdCard) == true) {
+				if (min(firstCard, secondCard) == 1) {
+					computerBid = 1;
+				} else if (min(firstCard, secondCard) == 2) {
+					computerBid = choose(1, 2);
+				} else if (min(firstCard, secondCard) > 2) {
+					computerBid = 2;
+				}
+			} else if (isBlack(secondCard) == true) {
+				if (min(firstCard, thirdCard) == 1) {
+					computerBid = 1;
+				} else if (min(firstCard, thirdCard) == 2) {
+					computerBid = choose(1, 2);
+				} else if (min(firstCard, thirdCard) > 2) {
+					computerBid = 2;
+				}
+			} else if (isBlack(firstCard) == true) {
+				if (min(secondCard, thirdCard) == 1) {
+					computerBid = 1;
+				} else if (min(secondCard, thirdCard) == 2) {
+					computerBid = choose(1, 2);
+				} else if (min(secondCard, thirdCard) > 2) {
+					computerBid = 2;
+				}
+			}
+		} else {
+			if (isBlack(thirdCard) == true) {
+				if (min(firstCard, secondCard) == 1) {
+					computerBid = choose(1, 2);
+				} else if (min(firstCard, secondCard) > 1 and min(firstCard, secondCard) <= 12) {
+					computerBid = choose(2, 3);
+				} else if (min(firstCard, secondCard) > 12) {
+					computerBid = 3;
+				}
+			} else if (isBlack(secondCard) == true) {
+				if (min(firstCard, thirdCard) == 1) {
+					computerBid = choose(1, 2);
+				} else if (min(firstCard, thirdCard) > 1 and min(firstCard, thirdCard) <= 12) {
+					computerBid = choose(2, 3);
+				} else if (min(firstCard, thirdCard) > 12) {
+					computerBid = 3;
+				}
+			} else if (isBlack(firstCard) == true) {
+				if (min(secondCard, thirdCard) == 1) {
+					computerBid = choose(1, 2);
+				} else if (min(secondCard, thirdCard) > 1 and min(secondCard, thirdCard) <= 12) {
+					computerBid = choose(2, 3);
+				} else if (min(secondCard, thirdCard) > 12) {
+					computerBid = 3;
+				}
+			}
+		}
+	} else if (isBlack(firstCard) == false and isBlack(secondCard) == false and isBlack(thirdCard) == false) {
+		if (playerGoesFirst == true) {
+			var bid_4 = irandom_range(0, 100000);
+			if (bid_4 <= 3125) {
+				computerBid = 3;
+			} else if (bid_4 > 3125 and bid_4 <= 9375) {
+				computerBid = 2;
+			} else if (bid_4 > 9375 and bid_4 <= 37500) {
+				computerBid = 1;
+			} else if (bid_4 > 37500) {
+				computerBid = 0;
+			}
+		} else {
+			if (min(firstCard, secondCard, thirdCard) == 1) {
+				var bid_5 = choose(0, 1, 2, 3);
+				if (bid_5 == 0) {
+					computerBid = 0;
+				} else if (bid_5 == 1 or bid_5 == 2) {
+					computerBid = 1;
+				} else {
+					computerBid = 2;
+				}
+			} else if (min(firstCard, secondCard, thirdCard) > 1) {
+				var bid_6 = choose(0, 1, 2, 3, 4, 5, 6, 7);
+				if (bid_6 == 0) {
+					computerBid = 0;
+				} else if (bid_6 == 1 or bid_6 == 2 or bid_6 == 3) {
+					computerBid = 1;
+				} else if (bid_6 == 4 or bid_6 == 5 or bid_6 == 6) {
+					computerBid = 2;
+				} else {
+					computerBid = 3;
+				}
+			}
+		}
+	}
+}
+
+*/
+
+/*
+VERY IMPORTANT COMMENT
+NEED TO CHANGE EVERY SINGLE THING IN A MIN() OR MAX() FUNCTION
+instead of firstCard, secondCard, etc. use valueOfCard(firstCard), valueOfCard(secondCard), etc.
+VERY VERY VERY VERY VERY VERY VERY VERY VERY IMPORTANT I THINK
+
+
+*/
