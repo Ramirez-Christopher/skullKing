@@ -40,11 +40,7 @@ round 2:
 round 3:
 	if three black cards: bid 3
 	if two black and one not black:
-		if player goes first:
-			chance to bid 3 = (nonblack card# - 1) / 56
-			chance to bid 2 = (32 - nonblack card# + higher blackcard# + lower blackcard#) / 56
-			chance to bid 1 = (12 - lower blackcard#) / 56
-			chance to bid 0 = (13 - higher blackcard#) / 56
+		if player goes first: bid 2
 		if computer goes first:
 			if non-black = 1: bid 2
 			if non-black = 2:
