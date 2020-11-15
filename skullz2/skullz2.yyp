@@ -7,6 +7,7 @@
     {"id":{"name":"spr_b1","path":"sprites/spr_b1/spr_b1.yy",},"order":0,},
     {"id":{"name":"spr_p7","path":"sprites/spr_p7/spr_p7.yy",},"order":6,},
     {"id":{"name":"spr_b13","path":"sprites/spr_b13/spr_b13.yy",},"order":4,},
+    {"id":{"name":"Obj_deck","path":"objects/Obj_deck/Obj_deck.yy",},"order":3,},
     {"id":{"name":"spr_b9","path":"sprites/spr_b9/spr_b9.yy",},"order":13,},
     {"id":{"name":"pirateFont","path":"fonts/pirateFont/pirateFont.yy",},"order":0,},
     {"id":{"name":"spr_p2","path":"sprites/spr_p2/spr_p2.yy",},"order":1,},
