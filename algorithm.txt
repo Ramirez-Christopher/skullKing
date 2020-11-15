@@ -1,0 +1,285 @@
+decide who deals
+	if player:
+	-> round 1
+		deal 1 card to each
+		computer bids (0 to 1)
+		player bids (0 to 1)
+		computer plays card for trick #1
+		player plays card for trick #1
+		who has higher rank?
+			computer:
+				did the computer bid 1?
+				if yes:
+					computer wins 20 points
+				did the computer bid 0?
+				if yes:
+					computer loses 10 points
+				did the player bid 0?
+				if yes:
+					player wins 20 points
+				did the player bid 1?
+				if yes:
+					player loses 10 points
+			player:
+				did the computer bid 0?
+				if yes:
+					computer wins 20 points
+				did the computer bid 1?
+				if yes:
+					computer loses 10 points
+				did the player bid 1?
+				if yes:
+					player win 20 points
+				did the player bid 0?
+				if yes:
+					player loses 10 points
+	-> round 2
+		deal 2 cards to each
+		computer bids (0 to 2)
+		player bids (0 to 2)
+		computer plays card for trick #1
+		player plays card for trick #1
+		who has higher rank?
+		if computer:
+			did the computer bid 0?
+			if yes:
+				computer loses 10 points
+			did the player bid 2?
+			if yes:
+				player loses 10 points
+			computer plays card for trick #2
+			player plays card for trick #2
+			who has higher rank?
+			if computer:
+				did the computer bid 2?
+				if yes:
+					computer wins 20 points
+				did the computer bid 0 or 1?
+				if yes:
+					computer loses 10 points
+				did the player bid 0?
+				if yes:
+					player wins 20 points
+				did the player bid 1 or 2?
+				if yes:
+					player loses 10 points
+			if player:
+				did the computer bid 1?
+				if yes:
+					computer wins 20 points
+				did the computer bid 2?
+				if yes:
+					computer loses 10 points
+				did the player bid 1?
+				if yes:
+					player wins 20 points
+				did the player bid 0?
+				if yes:
+					player loses 10 points
+		if player:
+			did the computer bid 2?
+			if yes:
+				computer loses 10 points
+			did the player bid 0?
+			if yes:
+				player loses 10 points
+			computer plays card for trick #2
+			player plays card for trick #2
+			who has higher rank?
+			if computer:
+				did the computer bid 1?
+				if yes:
+					computer wins 20 points
+				did the computer bid 0?
+				if yes:
+					computer loses 10 points
+				did the player bid 1?
+				if yes:
+					player wins 20 points
+				did the player bid 2?
+				if yes:
+					player loses 10 points
+			if player:
+				did the computer bid 0?
+				if yes:
+					computer wins 20 points
+				did the computer bid 1 or 2?
+				if yes:	
+					computer loses 10 points
+				did the player bid 2?
+				if yes:
+					player wins 20 points
+				did the player bid 0 or 1?
+				if yes:
+					player loses 10 points
+	-> round 3
+		deal 3 cards to each
+		computer bids (0 to 3)
+		player bids (0 to 3)
+		computer plays card for trick #1
+		player plays card for trick #1
+		who has higher rank?
+		if computer:
+			did the computer bid 0?
+			if yes:
+				computer loses 10 points
+			did the player bid 3?
+			if yes:
+				player loses 10 points
+			computer plays card for trick #2
+			player plays card for trick #2
+			who has higher rank?
+			if computer:
+				did the computer bid 0 or 1?
+				if yes:
+					computer loses 10 points
+				did the player bid 2 or 3?
+				if yes:
+					player loses 10 points
+				computer plays card for trick #3
+				player plays card for trick #3
+				who has higher rank?
+				if computer:
+					did the computer bid 3?
+					if yes:
+						computer wins 20 points
+					did the computer bid 0 or 1 or 2?
+					if yes:
+						computer loses 10 points
+					did the player bid 0?
+					if yes:
+						player wins 20 points
+					did the player bid 1 or 2 or 3?
+					if yes:
+						player loses 10 points
+				if player:
+					did the computer bid 2?
+					if yes:
+						computer wins 20 points
+					did the computer bid 3?
+					if yes:
+						computer loses 10 points
+					did the player bid 1?
+					if yes:
+						player wins 20 points
+					did the player bid 0?
+					if yes:
+						player loses 10 points
+			if player:
+				did the computer bid 3?
+				if yes:
+					computer loses 10 points
+				did the player bid 0?
+				if yes:
+					player loses 10 points
+				computer plays card for trick #3
+				player plays card for trick #3
+				who has higher rank?
+				if computer:
+					did the computer bid 2?
+					if yes:
+						computer wins 20 points
+					did the computer bid 0 or 1?
+					if yes:
+						computer loses 10 points
+					did the player bid 1?
+					if yes:
+						player wins 20 points
+					did the player bid 2 or 3?
+					if yes:
+						player loses 10 points
+				if player:
+					did the computer bid 1?
+					if yes:
+						computer wins 20 points
+					did the computer bid 2 or 3?
+					if yes:
+						computer loses 10 points
+					did the player bid 2?
+					if yes:
+						player wins 20 points
+					did the player bid 0 or 1?
+					if yes:
+						player loses 10 points
+		if player:
+			did the computer bid 3?
+			if yes:
+				computer loses 10 points
+			did the player bid 0?
+			if yes:
+				player loses 10 points
+			computer plays card for trick #2
+			player plays card for trick #2
+			who has higher rank?
+			if computer:
+				did the computer bid 0?
+				if yes:
+					computer loses 10 points
+				did the player bid 3?
+				if yes:
+					player loses 10 points
+				computer plays card for trick #3
+				player plays card for trick #3
+				who has higher rank?
+				if computer:
+					did the computer bid 2?
+					if yes:
+						computer wins 20 points
+					did the computer bid 0 or 1?
+					if yes:
+						computer loses 10 points
+					did the player bid 1?
+					if yes:
+						player wins 20 points
+					did the player bid 2 or 3?
+					if yes:
+						player loses 10 points
+				if player:
+					did the computer bid 1?
+					if yes:
+						computer wins 20 points
+					did the computer bid 2 or 3?
+					if yes:
+						computer loses 10 points
+					did the player bid 2?
+					if yes:
+						player wins 20 points
+					did the player bid 0 or 1?
+					if yes:
+						player loses 20 points
+			if player:
+				did the computer bid 2 or 3?
+				if yes:
+					computer loses 10 points
+				did the player bid 0 or 1?
+				if yes:
+					player loses 10 points
+				computer plays card for trick #3
+				player plays card for trick #3
+				who has higher rank?
+				if computer:
+					did the computer bid 1?
+					if yes:
+						computer wins 20 points
+					did the computer bid 0?
+					if yes:
+						computer loses 10 points
+					did the player bid 2?
+					if yes:
+						player wins 20 points
+					did the player bid 3?
+					if yes:
+						player loses 10 points
+				if player:
+					did the computer bid 0?
+					if yes:
+						computer wins 20 points
+					did the computer bid 1 or 2 or 3?
+					if yes:
+						computer loses 10 points
+					did the player bid 3?
+					if yes:
+						player wins 20 points
+					did the player bid 0 or 1 or 2?
+					if yes:
+						player loses 10 points
