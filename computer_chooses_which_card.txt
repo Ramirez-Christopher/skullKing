@@ -1,0 +1,46 @@
+round 1:
+	-> trick #1
+		there is no logic, only chance
+round 2:
+	-> trick #1
+		if computer bid 0:
+			computer should choose lower rank of the 2 choices
+		if computer bid 1:
+			computer should choose higher rank of the 2 choices
+		if computer bid 2:
+			computer should choose higher rank of the 2 choices
+	-> trick #2
+		there is no logic, only chance
+round 3:
+	-> trick #1
+		if computer bid 0:
+			computer should choose lowest rank of the 3 choices
+		if computer bid 1:
+			computer should choose highest rank of the 3 choices
+		if computer bid 2:
+			computer should choose highest rank of the 3 choices
+		if computer bid 3:
+			computer should choose highest rank of the 3 choices
+	-> trick #2
+		if computer bid 0:
+			if computer lost:
+				computer should choose lower rank of the 2 choices
+			if computer won:
+				computer should choose lower rank of the 2 choices
+		if computer bid 1:
+			if computer lost:
+				computer should choose higher rank of the 2 choices
+			if computer won:
+				computer should choose lower rank of the 2 choices
+		if computer bid 2:
+			if computer lost:
+				computer should choose higher rank of the 2 choices
+			if computer won:
+				computer should choose higher rank of the 2 choices
+		if computer bid 3:
+			if computer lost:
+				computer should choose higher rank of the 2 choices
+			if computer won:
+				computer should choose higher rank of the 2 choices
+	-> trick #3
+		there is no logic, only chance
