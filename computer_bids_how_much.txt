@@ -1,3 +1,4 @@
+->
 round 1:
 	if card is black: bid 1
 	if card is not black:
