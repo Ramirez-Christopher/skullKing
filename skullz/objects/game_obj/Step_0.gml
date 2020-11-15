@@ -26,6 +26,14 @@ if(keyboard_check_pressed(vk_anykey)){
 				game_end();
 				break
 			}
+		case rm_rules:
+			
+			if(keyboard_check_pressed(vk_escape)){
+				room_goto(rm_start);
+			
+			}
+			break;
+			
 			
 		case rm_round1:
 		case rm_round2:	
