@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> reserve
 {
   "bboxMode": 0,
   "collisionKind": 1,
@@ -76,6 +79,7 @@
   "name": "spr_b4",
   "tags": [],
   "resourceType": "GMSprite",
+<<<<<<< HEAD
 =======
 {
   "bboxMode": 0,
@@ -155,4 +159,6 @@
   "tags": [],
   "resourceType": "GMSprite",
 >>>>>>> cc5a0fd7b07631d6014264269f1352fa0e82513b
+=======
+>>>>>>> reserve
 }

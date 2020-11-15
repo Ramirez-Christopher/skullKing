@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> reserve
 {
   "resources": [
     {"id":{"name":"spr_p12","path":"sprites/spr_p12/spr_p12.yy",},"order":11,},
@@ -97,6 +100,7 @@
   "name": "skullz2",
   "tags": [],
   "resourceType": "GMProject",
+<<<<<<< HEAD
 =======
 {
   "resources": [
@@ -234,4 +238,6 @@
   "tags": [],
   "resourceType": "GMProject",
 >>>>>>> cc5a0fd7b07631d6014264269f1352fa0e82513b
+=======
+>>>>>>> reserve
 }
