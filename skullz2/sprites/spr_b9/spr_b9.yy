@@ -17,8 +17,8 @@
   "width": 176,
   "height": 234,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "",
+    "path": "",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c2d01a7f-9ed4-4683-8f8c-f6610c45fc3f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Black Suite",
+    "path": "folders/Sprites/Black Suite.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_b9",
