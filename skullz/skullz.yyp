@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "bec6c73c-f641-4792-910b-cd68a6aeee75",
+            "Value": {
+                "id": "55cfe674-0044-4618-8cef-624964476f81",
+                "resourcePath": "objects\\obj_gameHelper\\obj_gameHelper.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bfee644e-be2c-43fa-b84e-d6ce72e246ce",
             "Value": {
                 "id": "74f6c18f-c61b-446a-9d63-e5832e2ca939",
