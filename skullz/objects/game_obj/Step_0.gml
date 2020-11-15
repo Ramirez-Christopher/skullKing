@@ -33,6 +33,15 @@ if(keyboard_check_pressed(vk_anykey)){
 			
 			}
 			break;
+		
+		case rm_credits:
+		
+			if(keyboard_check_pressed(vk_escape)){
+				room_goto(rm_start);
+			
+			}
+			break;
+			
 			
 			
 		case rm_round1:
