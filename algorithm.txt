@@ -283,3 +283,4 @@ decide who deals
 					did the player bid 0 or 1 or 2?
 					if yes:
 						player loses 10 points
+if computer deals, the only change is that the player bids and plays first.
