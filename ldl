@@ -1,0 +1,35 @@
+[33m6f0b4f9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to 6f0b4f9
+[33mca61aee[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: merge refs/remotes/origin/main: Fast-forward
+[33m6f0b4f9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{2}: reset: moving to 6f0b4f9
+[33m337d7b3[m HEAD@{3}: commit (merge): HELP
+[33m22041a3[m HEAD@{4}: commit: workable version??
+[33m0ef9d03[m HEAD@{5}: reset: moving to 0ef9d03
+[33me217508[m HEAD@{6}: reset: moving to e217508
+[33m03f7422[m HEAD@{7}: pull: Fast-forward
+[33me217508[m HEAD@{8}: reset: moving to e217508
+[33mece2381[m HEAD@{9}: commit (merge): version 1.4
+[33mc7aaf7d[m HEAD@{10}: commit: version1.4
+[33m4e025bb[m HEAD@{11}: pull: Fast-forward
+[33m0ef9d03[m HEAD@{12}: checkout: moving from test to main
+[33mc92b9e6[m[33m ([m[1;31morigin/test[m[33m, [m[1;32mtest[m[33m)[m HEAD@{13}: checkout: moving from main to test
+[33m0ef9d03[m HEAD@{14}: commit: workable version
+[33me217508[m HEAD@{15}: merge test: Merge made by the 'recursive' strategy.
+[33m760b371[m HEAD@{16}: checkout: moving from test to main
+[33mc92b9e6[m[33m ([m[1;31morigin/test[m[33m, [m[1;32mtest[m[33m)[m HEAD@{17}: checkout: moving from main to test
+[33m760b371[m HEAD@{18}: checkout: moving from main to main
+[33m760b371[m HEAD@{19}: pull: Fast-forward
+[33m48dec84[m HEAD@{20}: checkout: moving from test to main
+[33mc92b9e6[m[33m ([m[1;31morigin/test[m[33m, [m[1;32mtest[m[33m)[m HEAD@{21}: commit: version 1.3
+[33m7fb987c[m HEAD@{22}: commit: version 1.3
+[33mabc348f[m HEAD@{23}: checkout: moving from main to test
+[33m48dec84[m HEAD@{24}: checkout: moving from test to main
+[33mabc348f[m HEAD@{25}: commit: version 1.2
+[33m48dec84[m HEAD@{26}: checkout: moving from main to test
+[33m48dec84[m HEAD@{27}: commit (merge): version1.1
+[33mc61971a[m HEAD@{28}: commit: version 1.1
+[33m96aca5e[m HEAD@{29}: commit: Contains initial rooms. you can only go into rules for now but I'll add more in a sec
+[33m1a198ee[m HEAD@{30}: pull: Fast-forward
+[33m050b031[m HEAD@{31}: pull: Fast-forward
+[33m7f8f0d3[m HEAD@{32}: pull: Fast-forward
+[33me246766[m HEAD@{33}: commit: test
+[33m1c0a37f[m HEAD@{34}: clone: from https://github.com/Ramirez-Christopher/skullKing.git
